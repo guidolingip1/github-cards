@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import alertify from "alertifyjs";
 
-import { User, Repos } from "./components";
+import { User, Repos, Made } from "./components";
 
 /* Styles */
 import "./App.css";
@@ -92,6 +92,7 @@ function App() {
               </button>
             </div>
             <User {...user} />
+            <Made />
           </div>
           <Repos repos={repos} />
         </div>
