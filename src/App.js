@@ -59,7 +59,8 @@ function App() {
       if (data != null) {
         setUser(data);
       } else {
-        alertify.error("User not found");
+        alertify.set("notifier", "position", "top-left");
+        alertify.error("User not found ! ");
       }
     });
 
